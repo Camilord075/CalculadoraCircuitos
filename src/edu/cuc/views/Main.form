@@ -178,21 +178,18 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-<<<<<<< HEAD
                   <Component id="EtiqResultado" min="-2" pref="104" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="Resultado" min="-2" pref="220" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="unidad" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="93" max="32767" attributes="0"/>
-=======
                   <Component id="EtiqResultado" min="-2" pref="65" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="Resultado" min="-2" pref="220" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="unidad" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="138" max="32767" attributes="0"/>
->>>>>>> frontEnd
               </Group>
           </Group>
         </DimensionLayout>
