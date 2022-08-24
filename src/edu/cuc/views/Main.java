@@ -18,6 +18,7 @@ public class Main extends javax.swing.JFrame {
      */
     public Main() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -29,9 +30,7 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
         EtiqResultado = new javax.swing.JLabel();
         Resultado = new javax.swing.JTextField();
         unidad = new javax.swing.JLabel();
@@ -41,20 +40,24 @@ public class Main extends javax.swing.JFrame {
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
+        jMenuItem8 = new javax.swing.JMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenuItem10 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
+        jMenuItem11 = new javax.swing.JMenuItem();
+        jMenuItem12 = new javax.swing.JMenuItem();
+        jMenuItem13 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel1.setFont(new java.awt.Font("HP Simplified Jpan Light", 1, 18)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Calculadora de Potencia.");
-
-        jLabel2.setFont(new java.awt.Font("HP Simplified Jpan", 0, 18)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Resultados");
+        setTitle("Calculadora de Potencia");
 
         EtiqResultado.setText("Resultado: ");
+
+        Resultado.setEditable(false);
 
         unidad.setText("Unidad");
 
@@ -63,30 +66,22 @@ public class Main extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(246, 246, 246)
-                        .addComponent(jLabel2))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(128, 128, 128)
-                        .addComponent(EtiqResultado)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(unidad)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(EtiqResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(unidad)
+                .addGap(0, 93, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel2)
-                .addGap(97, 97, 97)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(EtiqResultado)
                     .addComponent(Resultado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(unidad))
-                .addContainerGap(141, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jMenu1.setText("Potencia");
@@ -108,17 +103,97 @@ public class Main extends javax.swing.JFrame {
         jMenu1.add(jMenuItem3);
 
         jMenuItem4.setText("Voltaje Resistencia");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem4);
 
         jMenuItem1.add(jMenu1);
 
         jMenu2.setText("Resistencia");
+
+        jMenuItem5.setText("Voltaje Corriente");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem5);
+
+        jMenuItem6.setText("Voltaje Potencia");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem6);
+
+        jMenuItem7.setText("Potencia Corriente");
+        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem7ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem7);
+
         jMenuItem1.add(jMenu2);
 
         jMenu3.setText("Corriente");
+
+        jMenuItem8.setText("Voltaje Resistencia");
+        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem8ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem8);
+
+        jMenuItem9.setText("Potencia Voltaje");
+        jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem9ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem9);
+
+        jMenuItem10.setText("Potencia Resistencia");
+        jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem10ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem10);
+
         jMenuItem1.add(jMenu3);
 
         jMenu4.setText("Voltaje");
+
+        jMenuItem11.setText("Resistencia Corriente");
+        jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem11ActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jMenuItem11);
+
+        jMenuItem12.setText("Potencia Corriente");
+        jMenuItem12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem12ActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jMenuItem12);
+
+        jMenuItem13.setText("Potencia Resistencia");
+        jMenuItem13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem13ActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jMenuItem13);
+
         jMenuItem1.add(jMenu4);
 
         setJMenuBar(jMenuItem1);
@@ -127,21 +202,16 @@ public class Main extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE))
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 9, Short.MAX_VALUE))
         );
 
         pack();
@@ -179,6 +249,166 @@ public class Main extends javax.swing.JFrame {
         unidad.setText("W");
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        CalculadoraPotencia calculadora = new CalculadoraPotencia();
+        
+        String recibeResistencia = JOptionPane.showInputDialog("Ingrese la resistencia: ");
+        String recibeVoltaje = JOptionPane.showInputDialog("Ingrese el voltaje: ");
+        
+        double resistencia = Double.parseDouble(calculadora.procesaTexto(recibeResistencia));
+        double voltaje = Double.parseDouble(calculadora.procesaTexto(recibeVoltaje));
+        
+        double resultado = calculadora.potenciaVoltajeResistencia(voltaje, resistencia);
+        
+        EtiqResultado.setText("Potencia: ");
+        Resultado.setText("" + resultado);
+        unidad.setText("W");
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        CalculadoraPotencia calculadora = new CalculadoraPotencia();
+        
+        String recibeVoltaje = JOptionPane.showInputDialog("Ingrese el voltaje: ");
+        String recibeCorriente = JOptionPane.showInputDialog("Ingrese la corriente: ");
+        
+        double voltaje = Double.parseDouble(calculadora.procesaTexto(recibeVoltaje));
+        double corriente = Double.parseDouble(calculadora.procesaTexto(recibeCorriente));
+        
+        double resultado = calculadora.resistenciaVoltajeCorriente(voltaje, corriente);
+        
+        EtiqResultado.setText("Resistencia: ");
+        Resultado.setText("" + resultado);
+        unidad.setText("Ohms");
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        CalculadoraPotencia calculadora = new CalculadoraPotencia();
+        
+        String recibeVoltaje = JOptionPane.showInputDialog("Ingrese el voltaje: ");
+        String recibePotencia = JOptionPane.showInputDialog("Ingrese la potencia: ");
+        
+        double voltaje = Double.parseDouble(calculadora.procesaTexto(recibeVoltaje));
+        double potencia = Double.parseDouble(calculadora.procesaTexto(recibePotencia));
+        
+        double resultado = calculadora.resistenciaVoltajePotencia(voltaje, potencia);
+        
+        EtiqResultado.setText("Resistencia: ");
+        Resultado.setText("" + resultado);
+        unidad.setText("Ohms");
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
+
+    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+        CalculadoraPotencia calculadora = new CalculadoraPotencia();
+        
+        String recibePotencia = JOptionPane.showInputDialog("Ingrese la potencia: ");
+        String recibeCorriente = JOptionPane.showInputDialog("Ingrese la corriente: ");
+        
+        double resistencia = Double.parseDouble(calculadora.procesaTexto(recibePotencia));
+        double corriente = Double.parseDouble(calculadora.procesaTexto(recibeCorriente));
+        
+        double resultado = calculadora.resistenciaPotenciaCorriente(resistencia, corriente);
+        
+        EtiqResultado.setText("Resistencia: ");
+        Resultado.setText("" + resultado);
+        unidad.setText("Ohms");
+    }//GEN-LAST:event_jMenuItem7ActionPerformed
+
+    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+        CalculadoraPotencia calculadora = new CalculadoraPotencia();
+        
+        String recibeVoltaje = JOptionPane.showInputDialog("Ingrese el voltaje: ");
+        String recibeResistencia = JOptionPane.showInputDialog("Ingrese la resistencia: ");
+        
+        double resistencia = Double.parseDouble(calculadora.procesaTexto(recibeResistencia));
+        double voltaje = Double.parseDouble(calculadora.procesaTexto(recibeVoltaje));
+        
+        double resultado = calculadora.corrienteVoltajeResistencia(voltaje, resistencia);
+        
+        EtiqResultado.setText("Corriente: ");
+        Resultado.setText("" + resultado);
+        unidad.setText("A");
+    }//GEN-LAST:event_jMenuItem8ActionPerformed
+
+    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
+        CalculadoraPotencia calculadora = new CalculadoraPotencia();
+        
+        String recibeVoltaje = JOptionPane.showInputDialog("Ingrese el voltaje: ");
+        String recibePotencia = JOptionPane.showInputDialog("Ingrese la potencia: ");
+        
+        double potencia = Double.parseDouble(calculadora.procesaTexto(recibePotencia));
+        double voltaje = Double.parseDouble(calculadora.procesaTexto(recibeVoltaje));
+        
+        double resultado = calculadora.corrientePotenciaVoltaje(potencia, voltaje);
+        
+        EtiqResultado.setText("Corriente: ");
+        Resultado.setText("" + resultado);
+        unidad.setText("A");
+    }//GEN-LAST:event_jMenuItem9ActionPerformed
+
+    private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
+        CalculadoraPotencia calculadora = new CalculadoraPotencia();
+        
+        String recibePotencia = JOptionPane.showInputDialog("Ingrese el potencia: ");
+        String recibeResistencia = JOptionPane.showInputDialog("Ingrese la resistencia: ");
+        
+        double resistencia = Double.parseDouble(calculadora.procesaTexto(recibeResistencia));
+        double potencia = Double.parseDouble(calculadora.procesaTexto(recibePotencia));
+        
+        double resultado = calculadora.corrientePotenciaResistencia(potencia, resistencia);
+        
+        EtiqResultado.setText("Corriente: ");
+        Resultado.setText("" + resultado);
+        unidad.setText("A");
+    }//GEN-LAST:event_jMenuItem10ActionPerformed
+
+    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+        CalculadoraPotencia calculadora = new CalculadoraPotencia();
+        
+        String recibeCorriente = JOptionPane.showInputDialog("Ingrese la corriente: ");
+        String recibeResistencia = JOptionPane.showInputDialog("Ingrese la resistencia: ");
+        
+        double resistencia = Double.parseDouble(calculadora.procesaTexto(recibeResistencia));
+        double corriente = Double.parseDouble(calculadora.procesaTexto(recibeCorriente));
+        
+        double resultado = calculadora.voltajeResistenciaCorriente(resistencia, corriente);
+        
+        EtiqResultado.setText("Voltaje: ");
+        Resultado.setText("" + resultado);
+        unidad.setText("V");
+    }//GEN-LAST:event_jMenuItem11ActionPerformed
+
+    private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
+        CalculadoraPotencia calculadora = new CalculadoraPotencia();
+        
+        String recibeCorriente = JOptionPane.showInputDialog("Ingrese la corriente: ");
+        String recibePotencia = JOptionPane.showInputDialog("Ingrese la potencia: ");
+        
+        double potencia = Double.parseDouble(calculadora.procesaTexto(recibePotencia));
+        double corriente = Double.parseDouble(calculadora.procesaTexto(recibeCorriente));
+        
+        double resultado = calculadora.voltajePotenciaCorriente(potencia, corriente);
+        
+        EtiqResultado.setText("Voltaje: ");
+        Resultado.setText("" + resultado);
+        unidad.setText("V");
+    }//GEN-LAST:event_jMenuItem12ActionPerformed
+
+    private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
+        CalculadoraPotencia calculadora = new CalculadoraPotencia();
+        
+        String recibeResistencia = JOptionPane.showInputDialog("Ingrese la resistencia: ");
+        String recibePotencia = JOptionPane.showInputDialog("Ingrese la potencia: ");
+        
+        double potencia = Double.parseDouble(calculadora.procesaTexto(recibePotencia));
+        double corriente = Double.parseDouble(calculadora.procesaTexto(recibeResistencia));
+        
+        double resultado = calculadora.voltajePotenciaResistencia(potencia, potencia);
+        
+        EtiqResultado.setText("Voltaje: ");
+        Resultado.setText("" + resultado);
+        unidad.setText("V");
+    }//GEN-LAST:event_jMenuItem13ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -205,6 +435,9 @@ public class Main extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -217,16 +450,23 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel EtiqResultado;
     private javax.swing.JTextField Resultado;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem10;
+    private javax.swing.JMenuItem jMenuItem11;
+    private javax.swing.JMenuItem jMenuItem12;
+    private javax.swing.JMenuItem jMenuItem13;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel unidad;
     // End of variables declaration//GEN-END:variables
